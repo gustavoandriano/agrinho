@@ -4,60 +4,301 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soja no Brasil: Do Plantio ao Prato</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <script src="assets/script.js"></script>
     <header>
-        <h1>Soja no Brasil: Do Plantio ao Prato</h1>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-seedling logo-icon"></i>
+                <div class="logo-text">Soja no Brasil</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#historia" class="active">História</a></li>
+                    <li><a href="#impactos">Impactos</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#curiosidades">Curiosidades</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <nav>
-        <a href="#historia">História</a>
-        <a href="#impactos">Impactos</a>
-        <a href="#solucoes">Soluções</a>
-        <a href="#curiosidades">Curiosidades</a>
-    </nav>
-    
-    <div class="container">
-        <section id="historia">
-            <h2>História da Soja no Brasil</h2>
-            <div class="card">
-                <p>A soja foi introduzida no Brasil no final do século XIX, mas só ganhou importância econômica a partir dos anos 1970 com o desenvolvimento de variedades adaptadas ao clima tropical.</p>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Soja no Brasil: Do Plantio ao Prato</h1>
+            <p>Descubra a jornada da soja brasileira e seu impacto em nossa economia e meio ambiente</p>
+            <a href="#historia" class="btn">Explorar</a>
+        </div>
+    </section>
+
+    <section id="historia" class="history">
+        <div class="container">
+            <div class="section-title">
+                <h2>História da Soja no Brasil</h2>
             </div>
-        </section>
-        
-        <section id="impactos">
-            <h2>Impactos Ambientais</h2>
-            <div class="card">
-                <h3>Desmatamento</h3>
-                <p>A expansão das áreas de cultivo é responsável por parte do desmatamento no Cerrado e Amazônia.</p>
+            
+            <div class="history-content">
+                <div class="history-text">
+                    <p>A soja chegou ao Brasil no final do século XIX, trazida por imigrantes japoneses. Inicialmente cultivada em pequena escala no sul do país, demorou décadas para se adaptar ao clima tropical brasileiro.</p>
+                    <p>O grande salto ocorreu na década de 1970, com o desenvolvimento de variedades adaptadas ao cerrado brasileiro. Essa conquista científica, combinada com avanços na mecanização agrícola, transformou o Brasil em um gigante da soja.</p>
+                    <p>Hoje, o Brasil é o maior produtor mundial de soja, com uma colheita que supera 135 milhões de toneladas anuais. A cultura se expandiu do sul para o centro-oeste e norte do país, transformando paisagens e economias regionais.</p>
+                </div>
+                <div class="history-image">
+                    <img src="assets/img/história.jpeg" alt="Plantação de soja">
+                </div>
             </div>
-            <div class="card">
-                <h3>Degradação do Solo</h3>
-                <p>O cultivo intensivo pode levar à perda de nutrientes e erosão do solo.</p>
+            
+            <div class="timeline-container">
+                <h3 class="section-title">Expansão da Soja por Décadas</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">1960</div>
+                            <p>Início da pesquisa para adaptação da soja ao clima tropical. Cultivo concentrado no Rio Grande do Sul e Santa Catarina.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">1970</div>
+                            <p>Desenvolvimento de variedades adaptadas ao cerrado. Expansão para o Paraná e início da ocupação do Mato Grosso do Sul.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">1980</div>
+                            <p>Consolidação da soja como principal commodity agrícola. Mecanização avança e produção atinge 15 milhões de toneladas.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">1990</div>
+                            <p>Expansão acelerada para o Centro-Oeste. Brasil se torna o segundo maior produtor mundial. Adoção de sementes transgênicas.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2000</div>
+                            <p>Fronteira agrícola avança sobre a Amazônia Legal. Produção supera 50 milhões de toneladas. Críticas ambientais aumentam.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2010</div>
+                            <p>Brasil ultrapassa os EUA como maior exportador. Tecnologia de precisão e agricultura digital se popularizam.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2020</div>
+                            <p>Produção atinge recordes acima de 135 milhões de toneladas. Pressão por sustentabilidade e rastreabilidade aumenta.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        
-        <section id="solucoes">
-            <h2>Soluções Sustentáveis</h2>
-            <div class="card">
-                <h3>Plantio Direto</h3>
-                <p>Técnica que mantém a palhada sobre o solo, reduzindo erosão e conservando umidade.</p>
+        </div>
+    </section>
+
+     <section id="impactos" class="environmental-impact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Impactos Ambientais</h2>
             </div>
-        </section>
-        
-        <section id="curiosidades">
-            <h2>Curiosidades</h2>
-            <div class="card">
-                <p>O Brasil é o maior produtor mundial de soja, com produção superior a 135 milhões de toneladas anuais.</p>
+            
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-img">
+                        <img src="assets/img/desmatamento.jpeg" alt="Desmatamento">
+                    </div>
+                    <div class="impact-content">
+                        <h3><i class="fas fa-tree"></i> Desmatamento</h3>
+                        <p>A expansão das áreas de cultivo de soja é responsável por parte significativa do desmatamento no Cerrado e na Amazônia. Entre 2000 e 2019, cerca de 20% da expansão da soja ocorreu sobre áreas de vegetação nativa.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-img">
+                        <img src="assets/img/degradaçao do solo.jpg" alt="Solo degradado">
+                    </div>
+                    <div class="impact-content">
+                        <h3><i class="fas fa-tint-slash"></i> Degradação do Solo</h3>
+                        <p>O cultivo intensivo sem práticas adequadas de conservação leva à perda de nutrientes, compactação e erosão do solo. Estima-se que 30% das áreas de soja apresentam algum nível de degradação.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-img">
+                        <img src="assets/img/uso da agua.webp" alt="Uso de água">
+                    </div>
+                    <div class="impact-content">
+                        <h3><i class="fas fa-faucet"></i> Uso Intensivo de Água</h3>
+                        <p>A produção de 1kg de soja consome cerca de 1.800 litros de água. Em regiões com escassez hídrica, a irrigação das lavouras compete com o abastecimento humano e de ecossistemas.</p>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
-    
+        </div>
+    </section>
+
+    <section id="solucoes" class="comparison">
+        <div class="container">
+            <div class="section-title">
+                <h2>Soluções Sustentáveis</h2>
+            </div>
+            
+            <div class="comparison-container">
+                <div class="comparison-card conventional">
+                    <div class="comparison-header">
+                        <h3>Produção Convencional</h3>
+                    </div>
+                    <div class="comparison-body">
+                        <p>Modelo predominante com alto impacto ambiental</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-times-circle"></i> Desmatamento para expansão</li>
+                            <li><i class="fas fa-times-circle"></i> Uso intensivo de agrotóxicos</li>
+                            <li><i class="fas fa-times-circle"></i> Monocultura extensiva</li>
+                            <li><i class="fas fa-times-circle"></i> Compactação do solo</li>
+                            <li><i class="fas fa-times-circle"></i> Alto consumo de água</li>
+                            <li><i class="fas fa-times-circle"></i> Emissões de CO₂ elevadas</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="comparison-card agroecological">
+                    <div class="comparison-header">
+                        <h3>Agroecológica</h3>
+                    </div>
+                    <div class="comparison-body">
+                        <p>Modelo sustentável com menor impacto ambiental</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Integração com vegetação nativa</li>
+                            <li><i class="fas fa-check-circle"></i> Controle biológico de pragas</li>
+                            <li><i class="fas fa-check-circle"></i> Rotação de culturas</li>
+                            <li><i class="fas fa-check-circle"></i> Plantio direto e cobertura do solo</li>
+                            <li><i class="fas fa-check-circle"></i> Manejo eficiente da água</li>
+                            <li><i class="fas fa-check-circle"></i> Sequestro de carbono no solo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-title">
+                <h3>Práticas Sustentáveis em Expansão</h3>
+            </div>
+            
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-content">
+                        <h3><i class="fas fa-leaf"></i> ILPF</h3>
+                        <p>Integração Lavoura-Pecuária-Floresta combina produção agrícola, criação animal e cultivo de árvores na mesma área. Aumenta a produtividade, diversifica a renda e melhora a saúde do solo.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-content">
+                        <h3><i class="fas fa-recycle"></i> Plantio Direto</h3>
+                        <p>Sistema que mantém a palhada da colheita anterior sobre o solo, reduzindo erosão, conservando umidade e aumentando a matéria orgânica. Reduz em até 50% as emissões de CO₂.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-content">
+                        <h3><i class="fas fa-seedling"></i> Fixação Biológica</h3>
+                        <p>Uso de bactérias (rizóbios) que fixam nitrogênio atmosférico no solo, substituindo até 100% dos fertilizantes nitrogenados. Reduz custos e impactos ambientais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curiosidades" class="curiosidades">
+        <div class="container">
+            <div class="section-title">
+                <h2>Curiosidades e Mitos</h2>
+            </div>
+            
+            <div class="curiosidades-grid">
+                <div class="curiosidade-card">
+                    <div class="curiosidade-title">
+                        <i class="fas fa-question curiosidade-icon"></i>
+                        <h3>Mito: Soja só serve para ração animal</h3>
+                    </div>
+                    <p>Verdade: Além da ração animal, a soja é matéria-prima para óleo comestível, biodiesel, leite, tofu, molhos e diversos produtos alimentícios humanos. Cerca de 25% da produção é destinada ao consumo direto humano.</p>
+                </div>
+                
+                <div class="curiosidade-card">
+                    <div class="curiosidade-title">
+                        <i class="fas fa-seedling curiosidade-icon"></i>
+                        <h3>Curiosidade: Soja brasileira é mais sustentável</h3>
+                    </div>
+                    <p>Devido ao Moratória da Soja (2006), menos de 2% da soja plantada na Amazônia vem de áreas desmatadas após 2008. A soja brasileira tem uma pegada de carbono 40% menor que a de outros grandes produtores.</p>
+                </div>
+                
+                <div class="curiosidade-card">
+                    <div class="curiosidade-title">
+                        <i class="fas fa-globe-americas curiosidade-icon"></i>
+                        <h3>Mito: Soja é um problema apenas do Brasil</h3>
+                    </div>
+                    <p>Verdade: A demanda global por soja triplicou nos últimos 20 anos, impulsionada principalmente pela China e Europa. O consumo per capita de soja na UE é 60% maior que no Brasil, embora não produza o grão.</p>
+                </div>
+                
+                <div class="curiosidade-card">
+                    <div class="curiosidade-title">
+                        <i class="fas fa-tint curiosidade-icon"></i>
+                        <h3>Curiosidade: Economia de água</h3>
+                    </div>
+                    <p>Produtores que adotam plantio direto e cobertura do solo reduzem em até 30% o consumo de água por tonelada produzida. A evaporação diminui e a infiltração da água no solo aumenta significativamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2023 Soja no Brasil | Contato: (41) 3345-6789 | Curitiba, PR</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Soja no Brasil</h3>
+                    <p>Um projeto educativo sobre a importância da soja para o Brasil, seus impactos ambientais e alternativas sustentáveis.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#historia"><i class="fas fa-chevron-right"></i> História da Soja</a></li>
+                        <li><a href="#impactos"><i class="fas fa-chevron-right"></i> Impactos Ambientais</a></li>
+                        <li><a href="#solucoes"><i class="fas fa-chevron-right"></i> Soluções Sustentáveis</a></li>
+                        <li><a href="#curiosidades"><i class="fas fa-chevron-right"></i> Curiosidades</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Recursos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-book"></i> Estudos Científicos</a></li>
+                        <li><a href="#"><i class="fas fa-chart-bar"></i> Dados de Produção</a></li>
+                        <li><a href="#"><i class="fas fa-hands-helping"></i> Iniciativas Sustentáveis</a></li>
+                        <li><a href="#"><i class="fas fa-graduation-cap"></i> Materiais Educativos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-envelope"></i> contato@sojanobrasil.org</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> (41) 3345-6789</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Curitiba, PR - Brasil</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Soja no Brasil: Do Plantio ao Prato. Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>
